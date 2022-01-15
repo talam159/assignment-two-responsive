@@ -1,4 +1,6 @@
-/* essential variables */
+/*============================================
+            essential variables
+ ============================================= */
 :root{
     --primary-color: #E02C6D;
 }
@@ -14,7 +16,9 @@ h1{
     font-weight: 700;
     line-height: 70px;
 }
-/* navigation styling */
+/*============================================
+            Navigation Styling
+ ============================================= */
 nav{
     font-family: 'Poppins', sans-serif;
 }
@@ -57,13 +61,17 @@ nav{
 .logo{
     text-decoration: none;
 }
-/* hover: reacts with the mouse pointer */
+/*============================================
+            Hover Effect
+ ============================================= */
 .nav-link:hover {
     background-color:var(--primary-color);
     color: white;
 }
 
-/* Landing section styling */
+/*============================================
+            landing page styling
+ ============================================= */
 .sub-texts{
     font-size: 16px;
     font-weight: 600;
@@ -81,6 +89,9 @@ nav{
     border: none;
     justify-content: center;
     /* align-items: center; */
+}
+.button:hover{
+    background-color: #92063a;
 }
 .fa-arrow-right{
     padding-left: 10px;
@@ -105,13 +116,15 @@ nav{
     transform: scale(1.22) rotate(0deg);
     transition: 0.8s;
 }
-/* product section styling */
+/*============================================
+            product section styling
+ ============================================= */
 .products{
     width: 330px;
     height: 476px;
     background-color:#fff;
     border-radius: 5px;
-    box-shadow: 0px 0px 40px;
+    box-shadow: 0px 0px 20px;
     margin: 10px;
 }
 .product-container{
@@ -124,6 +137,7 @@ nav{
     margin: 12px;
     padding-top: 10px;
     align-items: center;
+    justify-content: center;
 }
 .products .product-details .product-title{
     font-size:28px;
@@ -131,6 +145,11 @@ nav{
     margin-bottom: 5px;
     margin-top: 5px;
     /* padding: 5px; */
+}
+.product-image img:hover{
+    border: 5px solid var(--primary-color);
+    border-radius: 15px;
+
 }
 .rating{
     display: flex;
@@ -140,8 +159,9 @@ nav{
     /* display: flex; */
     align-items: center;
 }
-.fa-star{
+.fa-star, .fa-star-half-alt{
     font-size: 10px;
+    color: #fbb200;
 }
 .rating-text{
     margin-left: 8px;
@@ -169,11 +189,20 @@ nav{
     text-decoration: none;
     color: var(--primary-color);
     float: right;
-    margin: 30px;
-    width: 30%;
+    height: 24px;
+    padding:10px;
+    margin-right: 160px;
+    display: inline-block;
     
 }
-/* contact stylying */
+#see-more:hover{
+    background-color: var(--primary-color);
+    color:#fff;
+}
+
+/*============================================
+            contact form styling
+ ============================================= */
 
 input[type=text], textarea {
     width: 95%;
@@ -187,6 +216,7 @@ input[type=text], textarea {
   background-color: #f2f2f2;
   padding: 50px;
   height: 700px;
+  margin-top:50px;
   
 }
 .form{
@@ -214,7 +244,9 @@ input[type=text], textarea {
 #contact-form{
     margin-top: 50px;
 }
-/* footer styling */
+/*============================================
+            footer styling
+ ============================================= */
 footer h3{
     font-size: 24px;
     color: #fff;
@@ -238,9 +270,12 @@ footer a{
     color: white;
     margin: 5px;
 }
-/* temp */
-/* media queries */
-@media screen and (max-width: 440px) {
+
+/*============================================
+        media queries for responsiveness
+ ============================================= */
+ /* --------for phone------- */
+@media screen and (max-width: 600px) {
     #nav-link{
         display: none;
     }
@@ -255,3 +290,18 @@ footer a{
     }
     
   }
+/* --------for tablet------- */
+  @media (min-width: 720px) and (max-width: 1000px){
+    #nav-link{
+        display: none;
+    }
+    .landing-container{
+        flex-wrap: wrap;
+    }
+    .contact-image{
+        display: none;
+    }
+    .form{
+        width: 90%
+    }
+}
