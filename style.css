@@ -6,6 +6,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+header{
+    display: inline-block;
+}
 h1{
     font-size: 52px;
     font-weight: 700;
@@ -65,10 +68,32 @@ nav{
     font-size: 16px;
     font-weight: 600;
 }
+.button{
+    background-color: var(--primary-color);
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    justify-content: center;
+    /* align-items: center; */
+}
+.fa-arrow-right{
+    padding-left: 10px;
+}
 .landing-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+}
+.landing-image img{
+    width: 440px;
+    height: 414px;
 }
 .title-container{
     width: 80%;
@@ -87,7 +112,14 @@ nav{
     background-color:#fff;
     border-radius: 5px;
     box-shadow: 0px 0px 40px;
+    margin: 10px;
 }
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .product{
     margin: 12px;
     padding-top: 10px;
@@ -133,3 +165,93 @@ nav{
     font-size: 14px;
     font-weight: 700;
 }
+#see-more{
+    text-decoration: none;
+    color: var(--primary-color);
+    float: right;
+    margin: 30px;
+    width: 30%;
+    
+}
+/* contact stylying */
+
+input[type=text], textarea {
+    width: 95%;
+  padding: 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing:content-box;
+  margin-bottom: 15px;
+}
+.contact-form{
+  background-color: #f2f2f2;
+  padding: 50px;
+  height: 700px;
+  
+}
+.form{
+    width: 40%;
+    float:right;
+    padding-right: 50px;
+}
+.contact-image{
+    width: 50%;
+    float: left;
+}
+.contact-image i{
+    font-size: 400px;
+    color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+}
+#contact{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    height: 40px;
+}
+#contact-form{
+    margin-top: 50px;
+}
+/* footer styling */
+footer h3{
+    font-size: 24px;
+    color: #fff;
+    height: 1px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0B0D17;
+    color: #fff;
+    height: 240px;
+}
+footer p{
+    text-align:justify;
+    font-size:small;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+/* temp */
+/* media queries */
+@media screen and (max-width: 440px) {
+    #nav-link{
+        display: none;
+    }
+    .landing-container{
+        flex-wrap: wrap;
+    }
+    .contact-image{
+        display: none;
+    }
+    .form{
+        width: 90%
+    }
+    
+  }
